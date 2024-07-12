@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Dimensão de funcionário da northwind.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: Chave primaria da dimensão de funcionários.
+        tests:
+          - unique
+          - not_null
