@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: Tabela fato com informações de vendas da northwind.
+    columns:
+      - name: SK_VENDAS
+        description: Chave primaria da tabela fato de vendas.
+        tests:
+          - unique
+          - not_null
