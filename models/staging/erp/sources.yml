@@ -14,4 +14,12 @@ sources:
             tests:
               - unique
               - not_null
+      - name: product
+        description: 'Tabela com dados de produtos.'
+      - name: category
+        description: 'Tabela com dados de categoria dos produtos.'
+      - name: _order_
+        description: 'Tabela com dados de vendas.'
+      - name: orderdetail
+        description: 'Tabela com dados de detalhamento das vendas.'
 

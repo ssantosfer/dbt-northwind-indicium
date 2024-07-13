@@ -9,10 +9,9 @@ with
             , cast(HIREDATE as date) as dt_contracao
             , cast(CITY as varchar) as cidade_funcionario
             , cast(COUNTRY as varchar) as pais_funcionario
-            --Não é vai ser usado agora:
             --ADDRESS
             --TITLEOFCOURTESY
-            --REGION
+            --REGION --não é vai ser usado agora
             --POSTALCODE
             --HOMEPHONE
             --EXTENSION
@@ -21,5 +20,6 @@ with
             --PHOTOPATH
         from {{ source('erp', 'employee') }}
     )
+
 select *
 from rennamed
