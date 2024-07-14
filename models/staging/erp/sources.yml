@@ -19,7 +19,14 @@ sources:
       - name: category
         description: 'Tabela com dados de categoria dos produtos.'
       - name: _order_
-        description: 'Tabela com dados de vendas.'
+        description: 'Tabela com dados de pedidos.'
       - name: orderdetail
-        description: 'Tabela com dados de detalhamento das vendas.'
+        description: 'Tabela com dados de detalhamento dos pedidos.'
+      - name: customer
+        description: 'Tabela com dados de clientes.'
+      - name: shipper
+        description: 'Tabela com dados de transportadora.'
+
+      - name: supplier
+        description: 'Tabela com dados de fornecedores.'
 
