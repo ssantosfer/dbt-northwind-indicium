@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_fornecedores
+    description: Dimensão de fornecedores da Northwind.
+    columns:
+      - name: pk_fornecedor
+        description: Chave primária da dimensão fornecedores.
+        tests:
+          - unique
+          - not_null

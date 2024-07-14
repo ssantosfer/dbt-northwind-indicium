@@ -43,8 +43,8 @@ with
         from joined
     )
     , chave_primeria as (
-        select 
-            fk_pedido::varchar || '-' || fk_produto::varchar as sk_vendas
+        select
+            {{ dbt_utils.generate_surrogate_key(['fk_pedido', 'fk_produto']) }}  as sk_vendas
             , *
         from metricas
     )
